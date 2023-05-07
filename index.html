@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+		<title>JLR Helpdesk</title>
+	
+	<!-- === CSS === -->
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/utilities.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar">
+		<a href="index.html" class="logo"><img src="img/logo.jfif" alt="Jaguar Landrover Logo" width="140" height="40"></a>
+		<nav>
+			<ul>
+				<details class="nav-dropdown">
+					<summary>Issue Header</summary>
+					<li><a href="pages/IssueCategoryOne/issueOne.html">Issue 1</a></li>
+					<li><a href="pages/IssueCategoryOne/issueTwo.html">Issue 2</a></li>
+				</details>
+				
+				<details class="nav-dropdown">
+					<summary>Issue Header</summary>
+					<li><a href="pages/IssueCategoryTwo/issueOne.html">Issue 1</a></li>
+					<li><a href="pages/IssueCategoryTwo/issueTwo.html">Issue 2</a></li>
+					<li><a href="pages/IssueCategoryTwo/issueThree.html">Issue 3</a></li>
+					<li><a href="pages/IssueCategoryTwo/issueFour.html">Issue 4</a></li>
+					<li><a href="pages/IssueCategoryTwo/issueFive.html">Issue 5</a></li>
+				</details>
+				
+				<details class="nav-dropdown">
+					<summary>Issue Header</summary>
+					<li><a href="pages/IssueCategoryThree/issueOne.html">Issue 1</a></li>
+					<li><a href="pages/IssueCategoryThree/issueTwo.html">Issue 2</a></li>
+				</details>
+				
+				<details class="nav-dropdown">
+					<summary>Issue Header</summary>
+					<li><a href="pages/IssueCategoryFour/issueOne.html">Issue 1</a></li>
+					<li><a href="pages/IssueCategoryFour/issueTwo.html">Issue 2</a></li>
+					<li><a href="pages/IssueCategoryFour/issueThree.html">Issue 3</a></li>
+					<li><a href="pages/IssueCategoryFour/issueFour.html">Issue 4</a></li>
+				</details>
+				
+				<details class="nav-dropdown">
+					<summary>Issue Header</summary>
+					<li><a href="pages/IssueCategoryFive/issueOne.html">Issue 1</a></li>
+					<li><a href="pages/IssueCategoryFive/issueTwo.html">Issue 2</a></li>
+					<li><a href="pages/IssueCategoryFive/issueThree.html">Issue 3</a></li>
+					<li><a href="pages/IssueCategoryFive/issueFour.html">Issue 4</a></li>
+					<li><a href="pages/IssueCategoryFive/issueFive-ticket.html">Issue 5</a></li>
+				</details>
+			</ul>
+		<nav>
+	</div>
+	
+	<section class="content">
+		<div class="container">
+			<h1>JLR Helpdesk Home</h1>
+			<div class="email">
+				<h2>Emails</h2>
+				<table>
+					<tr class="tableTh">
+						<th>Team</th>
+						<th>Email Address</th>
+					</tr>
+					<tr>
+						<td class="tableTh">Team Email</td>
+						<td class="hover-cell"><input type="button" onClick="copyAddress('ExampleEmail.com)" value="ExampleEmail.com"></td>
+					</tr>
+					<tr>
+						<td class="tableTh">Team Email</td>
+						<td class="hover-cell"><input type="button" onClick="copyAddress('ExampleEmail.com')" value="ExampleEmail.com"></td>
+					</tr>
+					<tr>
+						<td class="tableTh">Team Email</td>
+						<td class="hover-cell"><input type="button" onClick="copyAddress('ExampleEmail.com')" value="ExampleEmail.com"></td>
+					</tr>
+					<tr>
+						<td class="tableTh">Team Email</td>
+						<td class="hover-cell"><input type="button" onClick="copyAddress('ExampleEmail.com')" value="ExampleEmail.com"></td>
+					</tr>
+					<tr>
+						<td class="tableTh">Team Email</td>
+						<td class="hover-cell"><input type="button" onClick="copyAddress('ExampleEmail.com')" value="ExampleEmail.com"></td>
+					</tr>
+					<tr>
+						<td class="tableTh">Team Email</td>
+						<td class="hover-cell"><input type="button" onClick="copyAddress('ExampleEmail.com')" value="ExampleEmail.com"></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="remote-app-version">
+				<h2>Remote app version</h2>
+				<table class="mb-1">
+					<tr class="tableTh">
+						<th>Platforms</th>
+						<th>LandRover version</th>
+						<th>Jaguar version</th>
+						<th>Minimum software version</th>
+					</tr>
+					<tr>
+						<td class="tableTh">Android</td>
+						<td>2.13.2</td>
+						<td>2.13.2</td>
+						<td>Android 9.0.0 and up</td>
+					</tr>
+					<tr>
+						<td class="tableTh" >IOS</td>
+						<td>2.13.4</td>
+						<td>2.13.4</td>
+						<td>iOS 13.0 or later</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	
+	<script>
+	function copyAddress(text){
+	
+		console.log(text);
+		navigator.clipboard.writeText(text);
+	}
+	</script> 
+</body>
+</html>
