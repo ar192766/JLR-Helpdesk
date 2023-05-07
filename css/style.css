@@ -1,0 +1,90 @@
+:root{
+	--primary-color: #fff;
+	--hover-color: #d4d4d4;
+}
+
+/* Global */
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	line-height: 1.6;
+	background-color: var(--primary-color);
+	font-family: 'motserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/* Navbar */
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 270px;
+	height: 100vh;
+	
+	background-color: var(--primary-color);
+	border-top-right-radius: 10px; /* curves the top right corner of the side menu */
+	border-bottom-right-radius: 10px; /* curves the bottom right of the side menu */
+	
+	white-space: nowrap; /* This makes the texts stay in a straight line */
+	box-shadow: 0px 0px 20px #d4d4d4; /* Creates a shadow effect of the right of the side menu */
+	
+	overflow-y: scroll;
+}
+
+.navbar .nav-dropdown > summary:hover{
+	background-color: var(--hover-color)
+}
+
+.navbar li a{
+	display: block;
+	padding: 5px 40px;
+}
+
+.navbar li a:hover{
+	background-color: var(--hover-color);
+}
+
+.navbar .logo{
+	padding-left: 50px;
+}
+
+/* Content */
+
+.container{
+	margin: 0 10%;
+}
+
+.container h1{
+	margin: 50px 0;
+}
+
+.container h2{
+	margin: 30px 0;
+}
+
+/* Home Page content */
+input{
+	height: 30px;
+	width: 100%;
+	border: none;
+	background-color: var(--primary-color-color);
+}
+input:hover{
+	cursor: pointer;
+}
+
+.hover-cell:hover{
+	background-color: var(--hover-color);
+	cursor: pointer;
+}
+
+
+
+
